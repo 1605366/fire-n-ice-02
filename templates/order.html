@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+      <div class="divider"></div>
+      <div class="divider"></div>
+
+<!--      cart starts-->
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <h4>ORDER NOW</h4>
+            <div class="dividerblack"></div>
+             <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Phone no.</label>
+                    <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="1800898000">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Address</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+             </form>
+        </div>
+        <div class="divider"></div>
+        <div class="col-12 col-md-4">
+             <h4 class="text-muted">PRICE DETAILS</h4>
+            <div class="dividerblack"></div>
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    </tr>
+                    <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    </tr>
+                    <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-danger btn-lg">Confirm Order</button>
+        </div>
+    </div>
+</div>
+<!--      cart ends-->
+
+
+            <div class="divider"></div>
+
+            <div class="divider"></div>
+
+
+{% endblock content %}

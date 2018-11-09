@@ -1,0 +1,415 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<!--  3dd starts-->
+<div class="container-fluid slider">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img class="img3d" src="{% static 'images/p1.jpg' %}" alt="">
+                  </div>
+                  <div class="details">
+                      <h3>DISH ONE</h3>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img class="img3d" src="{% static 'images/p2.jpeg' %}" alt="">
+                  </div>
+                  <div class="details">
+                      <h3>DISH ONE</h3>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img class="img3d" src="{% static 'images/p3.jpeg' %}" alt="">
+                  </div>
+                  <div class="details">
+                      <h3>DISH ONE</h3>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img class="img3d" src="{% static 'images/p4.jpeg' %}" alt="">
+                  </div>
+                  <div class="details">
+                      <h3>DISH ONE</h3>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img class="img3d" src="{% static 'images/p5.jpeg' %}" alt="">
+                  </div>
+                  <div class="details">
+                      <h3>DISH ONE</h3>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img class="img3d" src="{% static 'images/p6.jpeg' %}" alt="">
+                  </div>
+                  <div class="details">
+                      <h3>DISH ONE</h3>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="imgBx">
+                      <img class="img3d" src="{% static 'images/p7.jpeg' %}" alt="">
+                  </div>
+                  <div class="details">
+                      <h3>DISH ONE</h3>
+                  </div>
+              </div>
+
+        </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+</div>
+<!--  3dd ends-->
+
+   <div class="divider"></div>
+
+<!--parallex stats    -->
+     <div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'images/back.jpg' %}">
+         <div class="head">
+         <h1 class="animated infinite pulse delay-2s ">WELCOME TO <span>ICE N FIRE </span></h1>
+         <br>
+         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ab accusamus modi natus, velit quo excepturi at porro. Blanditiis facilis laboriosam nostrum adipisci ipsam molestiae ex est, libero quaerat nam?</h5>
+         <br>
+         <br>
+         <button type="button" class="btn btn-warning btn-lg">ORDER NOW</button>
+         </div>
+     </div>
+<!--parallex ends    -->
+
+  <div class="divider"></div>
+
+<!-- popular starts-->
+  <div class="container-fluid">
+     <h1>OUR BESTSELLERS</h1>
+     <div class="divider"></div>
+     <div class="divider"></div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+        <img class="img animated infinite pulse delay-2s" src="{% static 'images/d1.jpg' %}" alt="">
+        <h1 class="dish">dish 1</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+        <img class="img animated infinite pulse delay-2s" src="{% static 'images/d2.jpg' %}" alt="">
+        <h1>dish 1</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+        <img class="img animated infinite pulse delay-2s" src="{% static 'images/d3.jpg' %}" alt="">
+        <h1>dish 1</h1>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+        <img class="img animated infinite pulse delay-2s" src="{% static 'images/d4.jpg' %}" alt="">
+        <h1>dish 1</h1>
+        </div>
+      </div>
+  </div>
+<!-- popular ends-->
+
+    <div class="divider"></div>
+    <div class="divider"></div>
+
+<!--menu starts-->
+
+<div class="container-fluid">
+    <h1>ORDER NOW</h1>
+    <div class="divider"></div>
+    <h3 class="cat">PIZZA</h3>
+    <br>
+    <div class="container">
+     <table class="table table-hover">
+    <tbody>
+       <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">-</button>
+            <input class="quantity" type="text">
+            <button type="button" class="btn btn-secondary">+</button>
+            </div>
+       </td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">-</button>
+            <input class="quantity" type="text">
+            <button type="button" class="btn btn-secondary">+</button>
+            </div>
+       </td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">-</button>
+            <input class="quantity" type="text">
+            <button type="button" class="btn btn-secondary">+</button>
+            </div>
+       </td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">-</button>
+            <input class="quantity" type="text">
+            <button type="button" class="btn btn-secondary">+</button>
+            </div>
+       </td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">-</button>
+            <input class="quantity" type="text">
+            <button type="button" class="btn btn-secondary">+</button>
+            </div>
+       </td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">-</button>
+            <input class="quantity" type="text">
+            <button type="button" class="btn btn-secondary">+</button>
+            </div>
+       </td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">-</button>
+            <input class="quantity" type="text">
+            <button type="button" class="btn btn-secondary">+</button>
+            </div>
+       </td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">-</button>
+            <input class="quantity" type="text">
+            <button type="button" class="btn btn-secondary">+</button>
+            </div>
+       </td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+
+     <div class="divider"></div>
+     <h3 class="cat">BURGERS n HOT DOGS</h3>
+     <br>
+     <div class="container">
+       <table class="table table-hover">
+        <tbody>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+
+      <div class="divider"></div>
+     <h3 class="cat">NOODLES n CHOWMEEN</h3>
+     <br>
+     <div class="container">
+       <table class="table table-hover">
+        <tbody>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+
+      <div class="divider"></div>
+     <h3 class="cat">BEVERAGES</h3>
+     <br>
+     <div class="container">
+       <table class="table table-hover">
+        <tbody>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">-</button>
+                <input class="quantity" type="text">
+                <button type="button" class="btn btn-secondary">+</button>
+                </div>
+           </td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+</div>
+
+<!--menu ends-->
+
+    <div class="divider"></div>
+      <button type="button" class="btn btn-warning btn-lg"><a href="{% url 'cart' %}">ADD TO CART</a></button>
+    <div class="divider"></div>
+    <div class="divider"></div>
+
+{% endblock content %}

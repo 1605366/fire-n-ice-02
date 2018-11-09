@@ -1,0 +1,128 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/basestyle.css' %}">
+
+   <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+   <script src="{% static 'js/parallax.js' %}"></script>
+
+   <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+  <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+   <link rel="stylesheet" href="{% static 'css/basestyle.css' %}">
+
+
+ <title>Hello, world!</title>
+
+  </head>
+  <body>
+   <script type="text/javascript" src="{% static 'js/swiper.min.js' %}" ></script>
+
+<!--    nav starts-->
+    <div class="container-fluid wide">
+        <nav class="navbar animated infinite pulse delay-2s fixed-top navbar-expand-lg navbar-light bg-red">
+  <a class="navbar-brand animated infinite pulse delay-2s" href="#">ICE n FIRE <i class="fas fa-fire"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active current">
+        <a class="nav-link" href="{% url 'index' %}">MENU <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'cart' %}">CART <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'order' %}">ORDERS <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    </div>
+ <!--    nav ends-->
+
+      <div class="divider"></div>
+
+      {% block content %}
+
+
+      {% endblock content %}
+
+<!--footer starts        -->
+<div class="container-fluid red">
+    <div class="row footrow">
+        <div class="col-12 col-md-4">
+            <h1>ICE N FIRE</h1>
+            <br>
+            <h4>ABOUT US</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit amet quibusdam, totam, inventore unde commodi, accusamus quisquam deserunt nemo dolorum laborum possimus architecto delectus earum vel! Accusamus omnis minima mollitia ea repudiandae veritatis? Placeat, fugit, a accusantium aspernatur magnam architecto sunt aliquid cupiditate corporis voluptas saepe alias, maiores dicta assumenda.</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <h4>OUR SERVICES</h4><br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus accusamus harum, est obcaecati consequuntur, omnis neque vitae. Accusamus dolore vitae, laborum ipsam quaerat debitis assumenda doloribus animi incidunt eius.</p>
+
+        </div>
+        <div class="col-12 col-md-4">
+            <h4>CONTACT US</h4><br><br>
+            <h6>EMAIL : firenice@gmail.com</h6><br>
+            <h6>COUSTOMER CARE : 1800 989 700</h6><br>
+            <h6>ADDRESS : b/120 ,patia , bhubhneshwar ,orissa</h6>
+        </div>
+    </div>
+    <div class="dividersmall"></div>
+    <div class="credit">
+        <p>© Copyright 2018 KFC. All Rights Reserved</p>
+    </div>
+</div>
+<!--footer ends       -->
+
+    <script type="text/javascript" src="{% static 'js/swiper.min.js' %}" ></script>
+     <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

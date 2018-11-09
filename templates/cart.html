@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+      <div class="divider"></div>
+      <div class="divider"></div>
+
+<!--      cart starts-->
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <h4>MY CART</h4>
+            <div class="dividerblack"></div>
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>price</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="divider"></div>
+        <div class="col-12 col-md-4">
+             <h4 class="text-muted">PRICE DETAILS</h4>
+            <div class="dividerblack"></div>
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    </tr>
+                    <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    </tr>
+                    <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-danger btn-lg">Place Order</button>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+<div class="divider"></div>
+<!--      cart ends-->
+{% endblock content %}         
